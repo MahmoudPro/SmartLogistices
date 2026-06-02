@@ -1,0 +1,6 @@
+@SmartLogistics.Presentation_HostAddress = http://localhost:5296
+
+GET {{SmartLogistics.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

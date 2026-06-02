@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36429.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLogistics.Presentation", "SmartLogistics.Presentation\SmartLogistics.Presentation.csproj", "{47B06E24-61DB-4E2D-B68F-20BA24A85E00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLogistics.Domain", "SmartLogistics.Domain\SmartLogistics.Domain.csproj", "{1D361D65-80F3-F196-DE95-3FA4755DB82E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLogistics.Application", "SmartLogistics.Application\SmartLogistics.Application.csproj", "{128BC8F3-094D-FCB5-2D56-1B89310E8763}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartLogistics.Infrastructure", "SmartLogistics.Infrastructure\SmartLogistics.Infrastructure.csproj", "{324BC411-CFB5-8283-010D-3AADF4AB2598}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47B06E24-61DB-4E2D-B68F-20BA24A85E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B06E24-61DB-4E2D-B68F-20BA24A85E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B06E24-61DB-4E2D-B68F-20BA24A85E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B06E24-61DB-4E2D-B68F-20BA24A85E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D361D65-80F3-F196-DE95-3FA4755DB82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D361D65-80F3-F196-DE95-3FA4755DB82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D361D65-80F3-F196-DE95-3FA4755DB82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D361D65-80F3-F196-DE95-3FA4755DB82E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{128BC8F3-094D-FCB5-2D56-1B89310E8763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{128BC8F3-094D-FCB5-2D56-1B89310E8763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{128BC8F3-094D-FCB5-2D56-1B89310E8763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{128BC8F3-094D-FCB5-2D56-1B89310E8763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{324BC411-CFB5-8283-010D-3AADF4AB2598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{324BC411-CFB5-8283-010D-3AADF4AB2598}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{324BC411-CFB5-8283-010D-3AADF4AB2598}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{324BC411-CFB5-8283-010D-3AADF4AB2598}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44773D83-3027-47E3-9CD0-4C13523D78BE}
+	EndGlobalSection
+EndGlobal
