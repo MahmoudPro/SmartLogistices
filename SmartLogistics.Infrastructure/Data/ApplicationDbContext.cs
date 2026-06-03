@@ -1,11 +1,12 @@
 ﻿using System.Reflection;
 using Microsoft.EntityFrameworkCore;
+using SmartLogistics.Application.Common.Interfaces;
 using SmartLogistics.Domain.Common;
 using SmartLogistics.Domain.Entities;
 
 namespace SmartLogistics.Infrastructure.Data;
 
-public sealed class ApplicationDbContext : DbContext
+public sealed class ApplicationDbContext : DbContext, IApplicationDbContext
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {
@@ -32,6 +33,7 @@ public sealed class ApplicationDbContext : DbContext
             switch (entry.State)
             {
                 case EntityState.Added:
+
                     // تم إعداد قيم CreatedAt تلقائياً في الـ Entity، ولكن هنا نضمن تعيينها بـ UTC في الـ DB
                     // entry.Entity.CreatedBy = _currentUserService.UserId; // ستضاف لاحقاً مع الـ Identity
                     break;
