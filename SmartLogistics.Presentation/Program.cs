@@ -6,6 +6,7 @@ using SmartLogistics.Application.Shipments.Commands.CreateShipment;
 using SmartLogistics.Infrastructure.Data;
 using SmartLogistics.Infrastructure.Repositories;
 using SmartLogistics.Application.Common.Behaviors;
+using SmartLogistics.Infrastructure.Middleware;
 
 namespace SmartLogistics.Presentation
 {
@@ -50,6 +51,8 @@ namespace SmartLogistics.Presentation
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseMiddleware<ExceptionHandlingMiddleware>();
 
             app.UseHttpsRedirection();
 

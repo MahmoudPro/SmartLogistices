@@ -1,6 +1,8 @@
 ﻿using FluentValidation;
 using MediatR;
-
+using FilterValidationResult = FluentValidation.Results.ValidationResult;
+// تأكد من استدعاء الـ Exception الخاص بك
+using CustomValidationException = SmartLogistics.Application.Common.Exceptions.ValidationException;
 namespace SmartLogistics.Application.Common.Behaviors;
 
 public sealed class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
@@ -33,7 +35,7 @@ public sealed class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<
             // إذا كان هناك أي خطأ، ارمي Exception مخصص للأخطاء فوراً ومنع الدخول للـ Handler
             if (failures.Count != 0)
             {
-                throw new ValidationException(failures);
+                throw new CustomValidationException(failures);
             }
         }
 
